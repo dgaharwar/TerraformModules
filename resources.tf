@@ -24,6 +24,6 @@ resource "aws_instance" "testInstance" {
   key_name = aws_key_pair.ec2key.key_name
 
   tags {
-		"Environment" = var.environment_tag
+		Environment = var.environment_tag
 	}
 }
